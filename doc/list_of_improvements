@@ -1,1 +1,14 @@
--
+Для мови Ukrain (uk):
+- переглянути роботу Native Support(рідна підтримка)(the tokenizer and stemmer)
+- переглянути роботу 	BERT Support
+- додати Microsoft Builtins (Microsoft Builtins означає, що видобуток Builtin Entity підтримується безпосередньо в javascript, тоді як підтримка Duckling вимагає розгортання екземпляра Duckling.)
+- перглянути роботу Duckling Builtins
+- переглянути роботу 	Sentiment
+
+Sentiment Analysis
+- AFINN
+- Senticon
+- Pattern
+
+Comparision with other NLP products
+
