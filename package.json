@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js/issues"
   },
-  "homepage": "https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js#readme"
+  "homepage": "https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js#readme",
+  
+  "devDependencies": {}
+  
 }
