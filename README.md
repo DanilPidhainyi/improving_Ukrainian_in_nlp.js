@@ -9,6 +9,14 @@
     Підгайний Данило
 </h3>
 
+<h2>Встановлення"</h2>
+
+<h3>
+	Спочатку встановіть nlp.js
+		npm install node-nlp
+	Потім
+		npm i improving_ukrainian_in_nlp
+</h3>
 
 [Методичні вказівки](https://jace-dev.herokuapp.com/design/js-talks#/)
 
