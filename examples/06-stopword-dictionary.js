@@ -21,12 +21,11 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const afinn = require('./afinn_uk.json');
-const negations = require('./negations_uk.json');
+const { StopwordsUk } = require('../../@nlpjs/lang-uk_m/src');
+// const { StopwordsUk } = require('@nlpjs/lang-uk');
 
-module.exports = {
-  afinn,
-  pattern: undefined,
-  senticon: undefined,
-  negations,
-};
+const stopwords = new StopwordsUk();
+stopwords.dictionary = {};
+stopwords.build(['is', 'your']);
+console.log(stopwords.removeStopwords(['who', 'is', 'your', 'develop']));
+// output: ['who', 'develop']

@@ -21,27 +21,10 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { Container } = require('../../../packages/core/src');
-const { SentimentAnalyzer } = require('../../../packages/sentiment/src');
-const { LangUk } = require('../../../packages/lang-uk/src');
-// const { Container } = require('@nlpjs/core');
-// const { SentimentAnalyzer } = require('@nlpjs/sentiment');
-// const { LangUk } = require('@nlpjs/lang-uk');
+const { StemmerUk } = require('../../@nlpjs/lang-uk_m/src');
+// const { StemmerUk } = require('@nlpjs/lang-uk');
 
-(async () => {
-  const container = new Container();
-  container.use(LangUk);
-  const sentiment = new SentimentAnalyzer({ container });
-  const result = await sentiment.process({ locale: 'uk', text: 'I love cats' });
-  console.log(result.sentiment);
-})();
-// output:
-// {
-//   score: 0.5,
-//   numWords: 3,
-//   numHits: 1,
-//   average: 0.16666666666666666,
-//   type: 'senticon',
-//   locale: 'uk',
-//   vote: 'positive'
-// }
+const stemmer = new StemmerUk();
+const input = 'Who is your DEVELOPER';
+console.log(stemmer.tokenizeAndStem(input));
+// output: [ 'who', 'is', 'your', 'develop' ]

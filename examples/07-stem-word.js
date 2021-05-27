@@ -21,11 +21,10 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const measureCorpus = require('../measure-corpus');
-const { LangUk } = require('../../../packages/lang-uk/src');
-// const { LangUk } = require('@nlpjs/lang-uk');
-const corpus = require('../corpora/corpus-en.json');
+const { StemmerUk } = require('../../@nlpjs/lang-uk_m/src');
+// const { StemmerUk } = require('@nlpjs/lang-uk');
 
-(async () => {
-  await measureCorpus(corpus, [LangEn]);
-})();
+const stemmer = new StemmerUk();
+const input = 'developer';
+console.log(stemmer.stemWord(input));
+// output: develop

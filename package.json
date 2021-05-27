@@ -1,10 +1,17 @@
 {
   "name": "improving_ukrainian_in_nlp",
-  "version": "1.0.0",
+  "version": "1.0.10",
   "description": "additions to the npl.js library",
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {},
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "echo start install",
+    "postinstall": "node ./src/install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hi" : "echo hi"
   },
   "repository": {
     "type": "git",
@@ -13,7 +20,6 @@
   "keywords": [
     "uk_npl"
   ],
-  
   "author": {
     "email": "danylo.pidgainyi@gmail.com",
     "name": "Danil Pidhainyi"
@@ -22,8 +28,5 @@
   "bugs": {
     "url": "https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js/issues"
   },
-  "homepage": "https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js#readme",
-  
-  "devDependencies": {}
-  
+  "homepage": "https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js#readme"
 }

@@ -21,11 +21,12 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { StemmerEn, StopwordsUk } = require('../../../packages/lang-uk/src');
-// const { StemmerEn, StopwordsUk } = require('@nlpjs/lang-uk');
+const afinn = require('./afinn_uk_m.json');
+const negations = require('./negations_uk_m.json');
 
-const stemmer = new StemmerUk();
-stemmer.stopwords = new StopwordsUk();
-const input = 'who is your developer';
-console.log(stemmer.tokenizeAndStem(input, false));
-// output: ['develop']
+module.exports = {
+  afinn,
+  pattern: undefined,
+  senticon: undefined,
+  negations,
+};

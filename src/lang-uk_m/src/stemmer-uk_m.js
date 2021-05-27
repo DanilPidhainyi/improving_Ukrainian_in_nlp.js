@@ -21,12 +21,13 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+
 const { BaseStemmer } = require('@nlpjs/core');
 
 class StemmerUk extends BaseStemmer {
   constructor(container) {
     super(container);
-    this.name = 'stemmer-uk';
+    this.name = 'stemmer-uk_m';
   }
 
   match(scrWord, regex, replacement = '') {

@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba896aa-eac6-4fed-804e-10ee4dfec29f" name="Default Changelist" comment="" />
+    <list default="true" id="6ba896aa-eac6-4fed-804e-10ee4dfec29f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/01-normalization.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/02-tokenization.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/03-tokenization-normalized.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/04-stopword-identify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/05-stopword-remove.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/06-stopword-dictionary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/07-stem-word.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/08-stem-array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/09-tokenize-and-stem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/10-tokenize-and-stem-remove-stopwords.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/11-sentiment-analysis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/12-benchmark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/README.md.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/lang-uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/normalizer-uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/sentiment/afinn_uk.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/sentiment/negations_uk.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/sentiment/senticon_uk.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/sentiment/sentiment_uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/stemmer-uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/stopwords-uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/tokenizer-uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/trigrams.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,28 +54,68 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.02-tokenization.js">
-    <configuration name="01-normalization.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/examples/13 - languages/ukrainian/01-normalization.js" working-dir="$PROJECT_DIR$/examples/13 - languages/ukrainian">
+  <component name="RunManager" selected="npm.hi">
+    <configuration name="con" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="con" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="02-tokenization.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/examples/13 - languages/ukrainian/02-tokenization.js" working-dir="$PROJECT_DIR$/examples/13 - languages/ukrainian">
+    <configuration name="hi" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="hi" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="TOKEN.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bot/TOKEN.js" working-dir="$PROJECT_DIR$/bot">
+    <configuration name="install" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="install" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="bot.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bot/bot.js" working-dir="$PROJECT_DIR$/bot">
+    <configuration name="postinstall" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="postinstall" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.02-tokenization.js" />
-        <item itemvalue="Node.js.01-normalization.js" />
-        <item itemvalue="Node.js.bot.js" />
-        <item itemvalue="Node.js.TOKEN.js" />
+        <item itemvalue="npm.hi" />
+        <item itemvalue="npm.test (1)" />
+        <item itemvalue="npm.install" />
+        <item itemvalue="npm.postinstall" />
+        <item itemvalue="npm.con" />
       </list>
     </recent_temporary>
   </component>
@@ -63,6 +131,13 @@
       <workItem from="1621434346142" duration="3701000" />
       <workItem from="1621450134331" duration="62000" />
       <workItem from="1621693714310" duration="7204000" />
+      <workItem from="1621888562583" duration="844000" />
+      <workItem from="1621974119992" duration="609000" />
+      <workItem from="1622034040813" duration="2384000" />
+      <workItem from="1622037811867" duration="1050000" />
+      <workItem from="1622039159701" duration="143000" />
+      <workItem from="1622039306645" duration="20000" />
+      <workItem from="1622039329284" duration="4182000" />
     </task>
     <servers />
   </component>

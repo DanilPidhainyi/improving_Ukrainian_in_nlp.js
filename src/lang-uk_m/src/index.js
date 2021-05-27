@@ -21,12 +21,14 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const LangUk = require('./lang-uk');
-const TokenizerUk = require('./tokenizer-uk');
-const StemmerUk = require('./stemmer-uk');
-const StopwordsUk = require('./stopwords-uk');
-const NormalizerUk = require('./normalizer-uk');
-const SentimentUk = require('./sentiment/sentiment_uk');
+const LangUk = require('./lang-uk_m');                   // повний аналіз
+const TokenizerUk = require('./tokenizer-uk_m');         // забезпечує токенізацію документів (розбиття на лексеми);
+const StemmerUk = require('./stemmer-uk_m');             // це процес скорочення слова до основи шляхом відкидання
+                                                       // допоміжних частин, таких як закінчення або суфікса
+const StopwordsUk = require('./stopwords-uk_m');         // слова, які зустрічаються в мові надто часто, щоб
+                                                       // нести якусь важливу інформацію
+const NormalizerUk = require('./normalizer-uk_m');       // відкидання невідомих символів
+const SentimentUk = require('./sentiment/sentiment_uk_m'); // аналіз тональності почуття
 
 module.exports = {
   LangUk,

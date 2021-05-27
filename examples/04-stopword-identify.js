@@ -21,22 +21,11 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const TokenizerUk = require('./tokenizer-uk');
-const StemmerUk = require('./stemmer-uk');
-const StopwordsUk = require('./stopwords-uk');
-const NormalizerUk = require('./normalizer-uk');
-const SentimentUk = require('./sentiment/sentiment_uk');
-const registerTrigrams = require('./trigrams');
+const { StopwordsUk } = require('../../@nlpjs/lang-uk_m/src');
+// const { StopwordsUk } = require('@nlpjs/lang-uk');
 
-class LangUk {
-  register(container) {
-    container.use(TokenizerUk); // сленги
-    container.use(StemmerUk);  // виділення корення
-    container.use(StopwordsUk); // слова які не нисуть змісту
-    container.use(NormalizerUk); // спрощення тексту
-    container.register('sentiment-uk', SentimentUk); // почуття, емоції
-    registerTrigrams(container); // кирилиця, визначення іменників, прикметників
-  }
-}
-
-module.exports = LangUk;
+const stopwords = new StopwordsUk();
+console.log(stopwords.isStopword('is'));
+// output: true
+console.log(stopwords.isStopword('developer'));
+// output: false

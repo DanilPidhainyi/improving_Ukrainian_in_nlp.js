@@ -21,10 +21,22 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { StemmerUk } = require('../../../packages/lang-uk/src');
-// const { StemmerUk } = require('@nlpjs/lang-uk');
+const TokenizerUk = require('./tokenizer-uk_m');
+const StemmerUk = require('./stemmer-uk_m');
+const StopwordsUk = require('./stopwords-uk_m');
+const NormalizerUk = require('./normalizer-uk_m');
+const SentimentUk = require('./sentiment/sentiment_uk_m');
+const registerTrigrams = require('./trigrams');
 
-const stemmer = new StemmerUk();
-const input = 'developer';
-console.log(stemmer.stemWord(input));
-// output: develop
+class LangUk {
+  register(container) {
+    container.use(TokenizerUk); // сленги
+    container.use(StemmerUk);  // виділення корення
+    container.use(StopwordsUk); // слова які не нисуть змісту
+    container.use(NormalizerUk); // спрощення тексту
+    container.register('sentiment-uk', SentimentUk); // почуття, емоції
+    registerTrigrams(container); // кирилиця, визначення іменників, прикметників
+  }
+}
+
+module.exports = LangUk;

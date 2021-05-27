@@ -21,26 +21,10 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { Normalizer } = require('@nlpjs/core');
+const { StopwordsUk } = require('../../@nlpjs/lang-uk_m/src');
 
-class NormalizerUk extends Normalizer {
-  constructor(container) {
-    super(container);
-    this.name = 'normalizer-uk';
-  }
+// const { StopwordsUk } = require('@nlpjs/lang-uk');
 
-  normalize(text) {
-    return text
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .toLowerCase();
-  }
-
-  run(srcInput) {
-    const input = srcInput;
-    input.text = this.normalize(input.text, input);
-    return input;
-  }
-}
-
-module.exports = NormalizerUk;
+const stopwords = new StopwordsUk();
+console.log(stopwords.removeStopwords(['who', 'is', 'your', 'develop']));
+// output: ['develop']

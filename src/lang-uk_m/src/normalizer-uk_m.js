@@ -21,13 +21,27 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { TokenizerUk } = require('../../../packages/lang-uk/src');
-// const { TokenizerUk } = require('@nlpjs/lang-uk');
+// все готово
+const { Normalizer } = require('@nlpjs/core');
 
-const tokenizer = new TokenizerUk();
-const input = "Це потрібно токенізувати Підгайний Д.Р.";
-const result = tokenizer.tokenize(input);
-console.log(result);
-// output: [ 'This', 'is', 'not', 'tokenized', 'yet' ]
+class NormalizerUk extends Normalizer {
+  constructor(container) {
+    super(container);
+    this.name = 'normalizer-uk_m';
+  }
 
-//console.log(tokenizer.replace("can't "));
+  normalize(text) {
+    return text
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase();
+  }
+
+  run(srcInput) {
+    const input = srcInput;
+    input.text = this.normalize(input.text, input);
+    return input;
+  }
+}
+
+module.exports = NormalizerUk;

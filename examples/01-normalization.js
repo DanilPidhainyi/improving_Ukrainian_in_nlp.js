@@ -30,8 +30,8 @@
  а іноді і дериваційно споріднених форм слова до загальної базової форми.
  */
 
-const { NormalizerUk } = require('../../../packages/lang-uk/src');
-// const { NormalizerUK } = require('@nlpjs/lang-uk');
+//const { NormalizerUk } = require('../../../packages/lang-uk/src');
+const {NormalizerUk} = require('../../@nlpjs/lang-uk_m/src');
 
 const normalizer = new NormalizerUk();
 const input = 'Це потрібно нормалізувати';

@@ -1,0 +1,33 @@
+{
+  "name": "lang-uk_m",
+  "version": "1.0.0",
+  "description": "Core",
+  "_location": "/@nlpjs/lang-uk_m",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js.git"
+  },
+  "keywords": [
+    "lang-uk_m"
+  ],
+   "_requiredBy": [
+    "/@nlpjs/lang-all"
+  ],
+  "author": {
+	 "name": "Danil Pidhainyi",
+	 "email": "danylo.pidgainyi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js/issues"
+  },
+  "homepage": "https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js#readme"
+}

@@ -21,11 +21,10 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { TokenizerUk } = require('../../../packages/lang-uk/src');
-// const { TokenizerUk } = require('@nlpjs/lang-uk');
+const { StemmerUk } = require('../../@nlpjs/lang-uk_m/src');
+// const { StemmerUk } = require('@nlpjs/lang-uk');
 
-const tokenizer = new TokenizerUk();
-const input = "This isn't tokenized yet";
-const result = tokenizer.tokenize(input, true);
-console.log(result);
-// output: [ 'this', 'is', 'not', 'tokenized', 'yet' ]
+const stemmer = new StemmerUk();
+const input = ['Who', 'is', 'your', 'developer'];
+console.log(stemmer.stem(input));
+// outuput: [ 'Who', 'is', 'your', 'develop' ]

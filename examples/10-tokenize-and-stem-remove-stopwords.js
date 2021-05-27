@@ -21,9 +21,11 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { StopwordsUk } = require('../../../packages/lang-uk/src');
-// const { StopwordsUk } = require('@nlpjs/lang-uk');
+const { StemmerEn, StopwordsUk } = require('../../@nlpjs/lang-uk_m/src');
+// const { StemmerEn, StopwordsUk } = require('@nlpjs/lang-uk');
 
-const stopwords = new StopwordsUk();
-console.log(stopwords.removeStopwords(['who', 'is', 'your', 'develop']));
+const stemmer = new StemmerUk();
+stemmer.stopwords = new StopwordsUk();
+const input = 'who is your developer';
+console.log(stemmer.tokenizeAndStem(input, false));
 // output: ['develop']

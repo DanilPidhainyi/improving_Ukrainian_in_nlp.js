@@ -26,7 +26,7 @@ const { Stopwords } = require('@nlpjs/core');
 class StopwordsUk extends Stopwords {
   constructor(container, words) {
     super(container);
-    this.name = 'stopwords-uk';
+    this.name = 'stopwords-uk_m';
     this.dictionary = {};
     const list = words || [
       'Про',
@@ -101,7 +101,7 @@ class StopwordsUk extends Stopwords {
       'Їх',
       'Там',
       'Цей',
-      'Вони»,
+      'Вони',
       'Ті',
       'Через',
       'Теж',
@@ -150,7 +150,7 @@ class StopwordsUk extends Stopwords {
         'Щ',
         'Ь',
         'Ти ',
-    'Ь',
+		'Ь',
         'Е',
         'Ю',
         'Я',

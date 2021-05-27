@@ -21,11 +21,11 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { StopwordsUk } = require('../../../packages/lang-uk/src');
-// const { StopwordsUk } = require('@nlpjs/lang-uk');
+const { TokenizerUk } = require('../../@nlpjs/lang-uk_m/src');
+// const { TokenizerUk } = require('@nlpjs/lang-uk');
 
-const stopwords = new StopwordsUk();
-stopwords.dictionary = {};
-stopwords.build(['is', 'your']);
-console.log(stopwords.removeStopwords(['who', 'is', 'your', 'develop']));
-// output: ['who', 'develop']
+const tokenizer = new TokenizerUk();
+const input = "This isn't tokenized yet";
+const result = tokenizer.tokenize(input, true);
+console.log(result);
+// output: [ 'this', 'is', 'not', 'tokenized', 'yet' ]
