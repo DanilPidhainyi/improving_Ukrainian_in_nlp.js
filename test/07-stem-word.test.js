@@ -21,14 +21,12 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { TokenizerUk } = require('../node_modules/@nlpjs/lang-uk_m/src');
+const { stemmer } = require('../examples/07-stem-word');
 
-//const { TokenizerUk } = require('../../@nlpjs/lang-uk_m/src');
+const input = 'розробляти';
+test('розробляти  => розробл', () => {
+    expect(stemmer.stemWord(input)).toBe('розробл')
+})
 
-const tokenizer = new TokenizerUk();
-const input = "Це потрібно токенізувати";
-const result = tokenizer.tokenize(input);
-console.log(result);
-// output: [ 'This', 'is', 'not', 'tokenized', 'yet' ]
+// output: develop
 
-exports.tokenizer = tokenizer;

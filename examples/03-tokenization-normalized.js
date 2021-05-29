@@ -21,11 +21,13 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { TokenizerUk } = require('../../@nlpjs/lang-uk_m/src');
-// const { TokenizerUk } = require('@nlpjs/lang-uk');
+//const { TokenizerUk } = require('../../@nlpjs/lang-uk_m/src');
+ const { TokenizerUk } = require('../node_modules/@nlpjs/lang-uk_m/src');
 
 const tokenizer = new TokenizerUk();
-const input = "This isn't tokenized yet";
+const input = "Це ще не токенізовано";
 const result = tokenizer.tokenize(input, true);
 console.log(result);
 // output: [ 'this', 'is', 'not', 'tokenized', 'yet' ]
+
+exports.tokenizer = tokenizer

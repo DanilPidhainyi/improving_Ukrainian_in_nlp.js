@@ -1,17 +1,16 @@
 {
   "name": "improving_ukrainian_in_nlp",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "description": "additions to the npl.js library",
   "dependencies": {
-    "fs-extra": "^10.0.0"
+    "fs-extra": "^10.0.0",
+    "jest": "^27.0.1",
+    "node-nlp": "^4.22.1"
   },
   "devDependencies": {},
   "main": "index.js",
   "scripts": {
-    "install": "echo start install",
-    "postinstall": "node ./src/install",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "hi" : "echo hi"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

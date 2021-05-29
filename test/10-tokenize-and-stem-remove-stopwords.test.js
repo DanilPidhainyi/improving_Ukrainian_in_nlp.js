@@ -21,14 +21,10 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { TokenizerUk } = require('../node_modules/@nlpjs/lang-uk_m/src');
+const { stemmer } = require('../examples/10-tokenize-and-stem-remove-stopwords');
 
-//const { TokenizerUk } = require('../../@nlpjs/lang-uk_m/src');
+const input = 'хто є твоїм розробником';
+test('хто є твоїм розробником => [ \'тво\', \'розробник\' ]', () => {
+    expect(stemmer.tokenizeAndStem(input, false)).toEqual([ 'тво', 'розробник' ])
+})
 
-const tokenizer = new TokenizerUk();
-const input = "Це потрібно токенізувати";
-const result = tokenizer.tokenize(input);
-console.log(result);
-// output: [ 'This', 'is', 'not', 'tokenized', 'yet' ]
-
-exports.tokenizer = tokenizer;

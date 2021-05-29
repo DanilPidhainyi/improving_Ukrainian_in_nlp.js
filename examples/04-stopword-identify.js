@@ -21,11 +21,13 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { StopwordsUk } = require('../../@nlpjs/lang-uk_m/src');
-// const { StopwordsUk } = require('@nlpjs/lang-uk');
+//const { StopwordsUk } = require('../../@nlpjs/lang-uk_m/src');
+ const { StopwordsUk } = require('../node_modules/@nlpjs/lang-uk_m/src');
 
 const stopwords = new StopwordsUk();
-console.log(stopwords.isStopword('is'));
+console.log(stopwords.isStopword('а'));
 // output: true
-console.log(stopwords.isStopword('developer'));
+console.log(stopwords.isStopword('лікарь'));
 // output: false
+
+exports.stopwords = stopwords;

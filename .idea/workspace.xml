@@ -3,32 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba896aa-eac6-4fed-804e-10ee4dfec29f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/01-normalization.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/02-tokenization.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/03-tokenization-normalized.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/04-stopword-identify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/05-stopword-remove.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/06-stopword-dictionary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/07-stem-word.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/08-stem-array.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/09-tokenize-and-stem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/10-tokenize-and-stem-remove-stopwords.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/11-sentiment-analysis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/12-benchmark.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13 - languages/ukrainian/README.md.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/01-normalization.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-normalization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-tokenization.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-tokenization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-tokenization-normalized.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-tokenization-normalized.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-stopword-identify.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-stopword-identify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-stopword-remove.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-stopword-remove.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-stopword-dictionary.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-stopword-dictionary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-stem-word.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/07-stem-word.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/08-stem-array.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/08-stem-array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-tokenize-and-stem.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-tokenize-and-stem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-tokenize-and-stem-remove-stopwords.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/10-tokenize-and-stem-remove-stopwords.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-sentiment-analysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/11-sentiment-analysis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/12-benchmark.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/12-benchmark.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/lang-uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/normalizer-uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/sentiment/afinn_uk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/sentiment/negations_uk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/sentiment/senticon_uk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/sentiment/sentiment_uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/stemmer-uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/stopwords-uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/tokenizer-uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lang-uk/src/trigrams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/install.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/install.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -138,6 +126,8 @@
       <workItem from="1622039159701" duration="143000" />
       <workItem from="1622039306645" duration="20000" />
       <workItem from="1622039329284" duration="4182000" />
+      <workItem from="1622129520181" duration="23000" />
+      <workItem from="1622129544561" duration="48000" />
     </task>
     <servers />
   </component>

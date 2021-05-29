@@ -30,13 +30,11 @@
  а іноді і дериваційно споріднених форм слова до загальної базової форми.
  */
 
-const { NormalizerUk } = require('../node_modules/@nlpjs/lang-uk_m/src');
-//const {NormalizerUk} = require('../../@nlpjs/lang-uk_m/src');
 
-const normalizer = new NormalizerUk();
+const {normalizer} = require('../examples/01-normalization');
+
 const input = 'Це потрібно нормалізувати';
-const result = normalizer.normalize(input);
-console.log(result);
+test('Це потрібно нормалізувати => це потрібно нормалізувати', () => {
+    expect(normalizer.normalize(input)).toBe('це потрібно нормалізувати')
+})
 // output: це потрібно нормалізувати
-
-exports.normalizer = normalizer;

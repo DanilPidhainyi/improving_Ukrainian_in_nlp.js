@@ -21,10 +21,12 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { StemmerUk } = require('../../@nlpjs/lang-uk_m/src');
-// const { StemmerUk } = require('@nlpjs/lang-uk');
+//const { StemmerUk } = require('../../@nlpjs/lang-uk_m/src');
+const { StemmerUk } = require('../node_modules/@nlpjs/lang-uk_m/src');
 
 const stemmer = new StemmerUk();
-const input = ['Who', 'is', 'your', 'developer'];
+const input = ['Хто', 'є', 'твоїм', 'розробником'];
 console.log(stemmer.stem(input));
-// outuput: [ 'Who', 'is', 'your', 'develop' ]
+// outuput: [ 'Хто', 'є', 'твоїм', 'розробник' ]
+
+exports.stemmer = stemmer;

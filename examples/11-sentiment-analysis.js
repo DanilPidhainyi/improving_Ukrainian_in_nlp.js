@@ -21,27 +21,30 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { Container } = require('../../@nlpjs/core/src');
-const { SentimentAnalyzer } = require('../../@nlpjs/sentiment/src');
-const { LangUk } = require('../../@nlpjs/lang-uk_m/src');
-// const { Container } = require('@nlpjs/core');
-// const { SentimentAnalyzer } = require('@nlpjs/sentiment');
-// const { LangUk } = require('@nlpjs/lang-uk');
+//const { Container } = require('../../@nlpjs/core/src');
+//const { SentimentAnalyzer } = require('../../@nlpjs/sentiment/src');
+//const { LangUk } = require('../../@nlpjs/lang-uk_m/src');
+const { Container } = require('../node_modules/@nlpjs/core');
+const { SentimentAnalyzer } = require('../node_modules/@nlpjs/sentiment');
+const { LangUk } = require('../node_modules/@nlpjs/lang-uk_m/src');
 
-(async () => {
+async  function sentiment_analyzer(input={ locale: 'uk', text: 'Я люблю котів' })  {
   const container = new Container();
   container.use(LangUk);
   const sentiment = new SentimentAnalyzer({ container });
-  const result = await sentiment.process({ locale: 'uk', text: 'Я люблю котіків' });
-  console.log(result.sentiment);
-})();
+  const result = await sentiment.process(input);
+  return result.sentiment;
+};
+console.log(sentiment_analyzer());;
+exports.sentiment_analyzer = sentiment_analyzer;
+
 // output:
 // {
-//   score: 0.5,
-//   numWords: 3,
-//   numHits: 1,
-//   average: 0.16666666666666666,
-//   type: 'senticon',
-//   locale: 'uk',
-//   vote: 'positive'
+// score: 2,
+//     numWords: 3,
+//     numHits: 1,
+//     average: 0.6666666666666666,
+//     type: 'afinn',
+//     locale: 'uk',
+//     vote: 'positive'
 // }

@@ -21,14 +21,19 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { TokenizerUk } = require('../node_modules/@nlpjs/lang-uk_m/src');
+const { sentiment_analyzer } = require('../examples/11-sentiment-analysis');
 
-//const { TokenizerUk } = require('../../@nlpjs/lang-uk_m/src');
+test('Я люблю котіків => positive', () => {
+  return sentiment_analyzer({ locale: 'uk', text: 'Я люблю котіків' }).then(date => {
+    expect(date).toEqual({
+      score: 2,
+      numWords: 3,
+      numHits: 1,
+      average: 0.6666666666666666,
+      type: 'afinn',
+      locale: 'uk',
+      vote: 'positive'
+    })
 
-const tokenizer = new TokenizerUk();
-const input = "Це потрібно токенізувати";
-const result = tokenizer.tokenize(input);
-console.log(result);
-// output: [ 'This', 'is', 'not', 'tokenized', 'yet' ]
+})})
 
-exports.tokenizer = tokenizer;

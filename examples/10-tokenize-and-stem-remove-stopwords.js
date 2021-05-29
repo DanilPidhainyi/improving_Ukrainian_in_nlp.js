@@ -21,11 +21,13 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { StemmerEn, StopwordsUk } = require('../../@nlpjs/lang-uk_m/src');
-// const { StemmerEn, StopwordsUk } = require('@nlpjs/lang-uk');
+//const { StemmerUk, StopwordsUk } = require('../../@nlpjs/lang-uk_m/src');
+const { StemmerUk, StopwordsUk } = require('../node_modules/@nlpjs/lang-uk_m/src');
 
 const stemmer = new StemmerUk();
 stemmer.stopwords = new StopwordsUk();
-const input = 'who is your developer';
+const input = 'хто є твоїм розробником';
 console.log(stemmer.tokenizeAndStem(input, false));
-// output: ['develop']
+// output: [ 'тво', 'розробник' ]
+
+exports.stemmer = stemmer;
