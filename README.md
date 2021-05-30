@@ -14,11 +14,11 @@
 Спочатку встановіть бібліотеку [`nlp.js`](https://github.com/axa-group/nlp.js/tree/master/packages) <br>
 	```bash
 	npm install node-nlp
-	``` 
+	``` <br>
 Потім доповнення [`improving_ukrainian_in_nlp`](https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js) <br>
 	```bash
 	npm i improving_ukrainian_in_nlp
-	``` 
+	``` <br>
 Готово
 
 
