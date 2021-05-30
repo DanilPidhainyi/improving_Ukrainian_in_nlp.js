@@ -11,7 +11,7 @@
 
 <h2>Встановлення</h2>
 
-<h3>
+
 	Спочатку встановіть бібліотеку [`nlp.js`](https://github.com/axa-group/nlp.js/tree/master/packages) <br>
 		```bash
 		npm install node-nlp
@@ -21,7 +21,7 @@
 		npm i improving_ukrainian_in_nlp
 		``` <br>
 	Готово
-</h3>
+
 
 ## Приклади використання
 
