@@ -36,7 +36,7 @@ const manager = new NlpManager({ languages: ['uk_m'], forceNER: true });
 manager.addDocument('uk_m', 'Допобачення', 'greetings.bye');
 manager.addDocument('uk_m', 'Бувай', 'greetings.bye');
 manager.addDocument('uk_m', 'Гарної дороги', 'greetings.bye');
-manager.addDocument('uk_m', 'Гарного дня', 'greetings.hello');
+manager.addDocument('uk_m', 'Гарного дня', 'greetings.bye');
 manager.addDocument('uk_m', 'Привіт', 'greetings.hello');
 manager.addDocument('uk_m', 'Доброго дня', 'greetings.hello');
 manager.addDocument('uk_m', 'Здраствуй', 'greetings.hello');
