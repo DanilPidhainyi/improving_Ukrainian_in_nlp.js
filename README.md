@@ -94,3 +94,8 @@ manager.addAnswer('uk_m', 'greetings.hello', 'Вітаю');
   }
 }
 ```
+
+# Контакти
+
+Телеграм - [`@danchik_pidgainyi`](https://t.me/danchik_pidgainyi)
+Email - danylo.pidgainyi@gmail.com
