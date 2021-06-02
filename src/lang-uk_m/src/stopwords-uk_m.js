@@ -23,18 +23,39 @@
 
 const { Stopwords } = require('@nlpjs/core');
 
+
 class StopwordsUk extends Stopwords {
+
+    /**
+     * <pre>
+     * StopwordsUk - це клас для видалення стоп-слів
+     *
+     * Стоп-слова - це слова які самостійно не
+     * несуть ніякого логічного навантаження
+     * </pre>
+     *
+     * @author DanilPidhainyi
+     * @exports StopwordsUk
+     *
+     * @example
+     *
+     * StopwordsUk.removeStopwords(["хто", "є", "твоїм", "розробником"])
+     * // -> 'розробником'
+     * @param {Array} - масив слів
+     * @return {Array} - знайдені стоп-слова
+     *
+     */
   constructor(container, words) {
     super(container);
     this.name = 'stopwords-uk_m';
     this.dictionary = {};
-    const list = words || [
-      'Про',
-      'Після',
-      'Усе',
-      'Також',
-      'І',
-      'Інші',
+    let list = words || [
+      'про',
+      'після',
+      'усе',
+      'також',
+      'і',
+      'інші',
       'Усе',
       'Як',
       'У',
@@ -166,9 +187,10 @@ class StopwordsUk extends Stopwords {
         '9',
         '0',
         '_',
-    ];
+    ].map(i => i.toLowerCase());
     this.build(list);
   }
+
 }
 
 module.exports = StopwordsUk;

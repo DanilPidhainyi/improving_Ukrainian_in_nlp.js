@@ -23,6 +23,28 @@
 const { Tokenizer } = require('@nlpjs/core');
 
 class TokenizerUk extends Tokenizer {
+
+  /**
+   * <pre>
+   * TokenizerUk - це клас для токенізації речень
+   *
+   * Токенізація - це процес розбиття тексту на список токенов.
+   * Можна розглядати токен як частини, подібні речі,
+   * це токен в реченні, а пропозиція є токеном в абзаці.
+   * </pre>
+   *
+   * @author DanilPidhainyi
+   * @exports TokenizerUk
+   *
+   * @example
+   *
+   * TokenizerUk.tokenize('Це потрібно токенізувати')
+   * // -> ['Це', 'потрібно', 'токенізувати']
+   * @param {string}
+   * @return {Array}
+   *
+   */
+
   constructor(container, shouldTokenize) {
     super(container, shouldTokenize);
     this.name = 'tokenizer-uk_m';

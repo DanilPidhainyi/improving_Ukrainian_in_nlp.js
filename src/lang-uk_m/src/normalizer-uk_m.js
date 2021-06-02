@@ -21,14 +21,40 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-// все готово
+
 const { Normalizer } = require('@nlpjs/core');
 
+/**
+ * <pre>
+ * NormalizerUk - це клас для нориалізації тексту
+ *
+ * Текст переводиться до нижнього регістру
+ * та замінюються спеціальні символи.
+ * Наприклад літери з наголосом.
+ * </pre>
+ *
+ * @author DanilPidhainyi
+ * @exports NormalizerUk
+ *
+ */
 class NormalizerUk extends Normalizer {
   constructor(container) {
     super(container);
     this.name = 'normalizer-uk_m';
   }
+
+  /**
+   *
+   * Нормалізує текс для наступних алгоритмів
+   *
+   * @param {string} text - сирий текст
+   *
+   * @example
+   *
+   * NormalizerUK.normalize('З цим Потрібно попрацювати')
+   * // -> 'з цим потрібно попрацювати'
+   * @return {string}
+   */
 
   normalize(text) {
     return text
