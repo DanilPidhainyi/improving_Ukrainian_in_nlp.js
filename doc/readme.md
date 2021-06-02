@@ -169,18 +169,16 @@ Telethon - бібліотека призначена для спрощення �
 
 ### <a name="l42">4.2. Документація</a>
 
-За допомогою pydoc було розроблено документацію коду, яку можна переглянути за [посиланням](https://htmlpreview.github.io/?https://github.com/greg-source/statistic-online/blob/master/doc/pydoc/index.html)
-
+За допомогою jsdoc було розроблено документацію коду,
+ яку можна переглянути за [посиланням](https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js/tree/master/doc/out)
+Вона включає в себе інформацію про алгоритми з [land-uk_m](https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js/tree/master/src/lang-uk_m/src)
 
 ## <a name="l5">5. Тестування</a>
 
-Тести виконано за допомогою середовища тестування pytest
+Тести виконано за допомогою фреймворку jest
 
-Test complete!
+Переглянути файли тестування можна за [посиланням](https://github.com/DanilPidhainyi/improving_Ukrainian_in_nlp.js/tree/master/test)
 
-Test complete!
-
-Process finished with exit code 0
 
 ## <a name="l6">6. Висновки</a>
 
